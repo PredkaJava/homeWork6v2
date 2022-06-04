@@ -7,21 +7,21 @@ package homeWork6;
 public class Main {
 
     public static void main(String[] args) {
-        Cats cat = new Cats("Борис", 100, 10);
-        Dogs dog = new Dogs("Бобик", 300, 10);
-        Dogs dog2 = new Dogs("Тузик", 600, 20);
+        Cats cat = new Cats("Борис");
+        Dogs dog = new Dogs("Бобик");
+        Dogs dog2 = new Dogs("Тузик");
 
         cat.printInfo();
         cat.toRun(100);
         cat.toSwim(0);
 
         dog.printInfo();
-        dog.toSwim(100);
+        dog.toSwim(10);
         dog.toRun(500);
 
         dog2.printInfo();
-        dog2.toRun(500);
-        dog2.toSwim(10);
+        dog2.toRun(600);
+        dog2.toSwim(100);
 
         System.out.println(Animals.getCount() + " Всего животных!");
         System.out.println(Cats.getCatCount() + " Кошки!");

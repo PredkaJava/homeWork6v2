@@ -3,8 +3,8 @@ package homeWork6;
 public class Cats extends Animals{
     private static int catCount;
 
-    public Cats(String name, int run, int swim) {
-        super(name, run, swim, "Кот");
+    public Cats(String name) {
+        super(name, 200, 0,"Кот");
         catCount++;
     }
 

@@ -5,6 +5,7 @@ public abstract class Animals {
     private int run;
     private int swim;
 
+
     private String type;
     private static int count;
 
@@ -21,7 +22,7 @@ public abstract class Animals {
     }
 
     public void toRun(int distance) {
-        if (run <= distance) {
+        if (distance <= run) {
             System.out.printf("%s %s пробежал %d м! \n", type, name, run);
         } else {
             System.out.printf("%s %s не может преодолеть такую дистанцию!\n", type, name);
@@ -30,7 +31,7 @@ public abstract class Animals {
     }
 
     public void toSwim(int distance) {
-        if (swim <= distance) {
+        if (distance <= swim) {
             System.out.printf("%s %s проплыл %d м!\n",type, name, swim);
         } else {
             System.out.printf("%s %s не может преодолеть такую дистанцию!\n", type, name);

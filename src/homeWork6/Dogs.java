@@ -2,8 +2,8 @@ package homeWork6;
 
 public class Dogs extends Animals {
     private static int dogCount;
-    public Dogs(String name, int run, int swim) {
-        super(name, run, swim, "Пёс");
+    public Dogs(String name) {
+        super(name, 500, 10, "Пёс");
         dogCount++;
     }
 
